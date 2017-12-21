@@ -1,7 +1,11 @@
 <template lang="pug">
   #app
-    img(src="./assets/logo.png")
     h1 {{ msg }}
+    p {{ 1 + 1 }}
+    p {{ 'Hola' + 'Mundo' }}
+    p {{ person.name }}
+    p {{ JSON.stringify(person) }}
+    p {{ true ? 'true' : 'false' }}
 </template>
 
 <script>
@@ -9,7 +13,10 @@ export default {
   name: 'app',
   data () {
     return {
-      msg: 'Hola Vue!'
+      msg: 'Hola Vue!',
+      person: {
+        name: 'Juan'
+      }
     }
   }
 }
