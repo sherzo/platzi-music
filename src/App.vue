@@ -1,11 +1,12 @@
 <template lang="pug">
   #app
-    h1 {{ msg }}
-    p {{ 1 + 1 }}
-    p {{ 'Hola' + 'Mundo' }}
-    p {{ person.name }}
-    p {{ JSON.stringify(person) }}
-    p {{ true ? 'true' : 'false' }}
+    p(v-show="showValue") {{ msg }} 
+    p(v-if="showValue") {{ msg }}
+    p(v-else="showValue") {{ msg }}
+    p(v-else-if="showValue") {{ msg }}
+  
+    ul
+      li(v-for="i in items") {{ i }}       
 </template>
 
 <script>
@@ -14,9 +15,10 @@ export default {
   data () {
     return {
       msg: 'Hola Vue!',
-      person: {
-        name: 'Juan'
-      }
+
+      showValue: false,
+
+      items: [1, 2, 3, 4, 5]
     }
   }
 }
