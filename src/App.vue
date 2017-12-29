@@ -12,14 +12,19 @@ export default {
   data () {
     return {
       name: '',
-      lasName: '',
-      birthDate: ''
+      lasName: ''
     }
   },
 
   computed: {
     fullName () {
       return this.name + ' ' + this.lasName
+    }
+  },
+
+  watch: {
+    name (newVal, oldVal) {
+      console.log(newVal, oldVal)
     }
   }
 }
