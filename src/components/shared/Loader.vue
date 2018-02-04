@@ -4,9 +4,9 @@
       h1 Cargando ...
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
   .content {
     padding: 20px;
-    min-ight: 40vh;
+    min-height: 50vh;
   }
 </style>
