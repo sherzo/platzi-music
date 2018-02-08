@@ -1,7 +1,7 @@
 <template lang="pug">
   .container
     .colums
-      column.is-5.is-offset-4
+      .column.is-5.is-offset-4
         .notification.is-danger
           slot(name="body") Algo anduve mal
 </template>

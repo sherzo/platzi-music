@@ -31,11 +31,12 @@
     methods: {
       selectTrack () {
         this.$emit('select', this.track.id)
+        this.$bus.$emit('set-track', this.track)
       }
     }
   }
 </script>
 
-<style>
+<style lang="scss">
   
 </style>
