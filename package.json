@@ -12,7 +12,8 @@
   "dependencies": {
     "bulma": "^0.6.1",
     "trae": "^1.4.2",
-    "vue": "^2.4.4"
+    "vue": "^2.4.4",
+    "vue-router": "^3.0.1"
   },
   "browserslist": [
     "> 1%",
