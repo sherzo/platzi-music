@@ -10,20 +10,9 @@
 </template>
 
 <script>
-export default {
+import { mapState } from 'vuex'
 
-  data () {
-    return {
-      track: {}
-    }
-  },
-
-  created () {
-    this.$bus.$on('set-track', (track) => {
-      this.track = track
-    })
-  }
-}
+export default { computed: { ...mapState(['track']) } }
 </script>
 
 <style lang="scss" scoped>
