@@ -21,7 +21,7 @@
             button.level-item.button.is-primary
               span.icon.is-small(@click="selectTrack") ▶
             button.level-item.button.is-warning
-              span.icon.is-small(@click="goToTrack(track.id)") show
+              span.icon.is-small(@click="goToTrack(track.id)") 👁
 </template>
 
 <script>

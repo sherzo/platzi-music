@@ -7,7 +7,7 @@
             img(:src="track.album.images[0].url")
           p.button-bar
             a.button.is-primary.is-large
-              span.icon(@click="selectTrack") |>
+              span.icon(@click="selectTrack") ▶
 
       .column.is-8
         .panel
